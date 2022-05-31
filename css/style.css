@@ -1,0 +1,399 @@
+		html, body{
+			scroll-behavior: smooth;
+			background-color: fuchsia;
+		}
+		.mainMenu{
+			width: 100%;
+			margin: 0 auto;
+			border: 10px ridge blue;
+			text-align: center;
+			background-color: orange;
+			position: relative;
+		}
+		.mainTwo p{
+			text-align: left;
+			font-style: italic;
+			font-size: 16px;
+		}
+		.mainThree {
+			display: inline-block;			
+			position: relative;
+			font-size: 16px;
+		}
+		.poscn {
+			position: absolute;
+			z-index: 5;
+			bottom: calc(50% - 18px);
+			width: 100%;
+			left: 0;
+		}
+		.poscn>p {
+			text-align: center;
+		}
+		.poscn:hover {
+			display: block;
+			background-color: red;
+		}
+		div img:hover+.poscn {			
+			background: rgba(211, 211, 211, .3);
+			display: block;
+		}
+		.poscnTwo {
+			position: absolute;
+			z-index: 5;
+			bottom: calc(50% - 18px);
+			width: 100%;
+			left: 0;
+		}
+		.poscnTwo>p {
+			text-align: center;
+		}
+		.poscnTwo:hover {
+			display: block;
+			background-color: red;
+		}
+		.grid {
+			position: fixed;
+			top: 50vmin;
+			left: 5%;				
+		}
+		.gridIn {
+			width: 6%;
+			height: 6%;
+			position: fixed;
+			top: 50vmin;
+			background-color: salmon;
+		}
+		li a{
+			text-decoration: none;
+			text-transform: uppercase;
+			padding: 10px 15px;
+			display: block;
+			outline: dotted;
+			font-size: 24px;
+			color: yellow;
+		}
+		body:hover .gridIn {
+			background: salmon;
+			z-index: 10;
+		}
+		.gridIn:hover+.grid {
+			display: block;
+			background: rgba(250, 128, 114, .3);
+			z-index: 15;			
+		}
+		.grid:hover {
+			display: block;
+			background: salmon;
+			z-index: 15;	
+		}
+		div img:hover+.poscnTwo {
+			background: rgba(211, 211, 211, .3);
+			display: block;
+		}
+		.chapter{
+			border: 1px dashed green;
+			box-sizing: content-box;
+		}
+		.chapterOne{
+			border: 1px dashed orange;
+		}
+		.chapterTwo{
+			border: 1px dashed fuchsia;
+		}
+		.mainGeneral{
+			text-align: center;
+			font-style: italic;
+			font-size: 26px;
+			background-color: aqua;
+		}
+		h1.mainGeneral{
+			padding: 15px 5px;
+		}
+		.electro{
+			background-color: red;
+			font-size: 20px;
+		}
+		.electroTwo{
+			background-color: greenyellow;
+			font-size: 20px;
+		}
+		.electro.electroAutomob{
+			background-color: salmon;
+			font-size: 20px;
+		}
+		.electroHome{
+			background-color: green;
+		}
+		h3+p{
+			font-style: italic;
+		}
+		div p{
+			text-align: justify;
+			padding: 10px 15px;
+		}
+		div+div+div>p{
+			font-style: italic;
+			color: blue;
+		}
+		div img{
+			/*border: 3px dotted green;*/
+			width: 100%;
+		}
+		div img.tPot{
+			border: 2px dotted green;
+			width: 50vmin;
+			height: 50vmin;
+		}
+		div ul {
+			font-size: 0;
+			text-align: center;
+		}
+		.ulThree {
+			position: absolute;
+			right: 100%;			
+			bottom: 0;
+			padding-top: 30px;
+			display: none;
+		}
+		.ulTwo {
+			position: absolute;
+			left: -25%;			
+			top: 100%;
+			padding-top: 20px;
+			display: none;
+		}
+		.ulTwo>li+li {
+			margin-top: 15px;
+			display: block;
+		}
+		.ulThree>li+li {
+			margin-top: 15px;
+			display: block;
+		}
+		ul li {
+			margin: 0 25px;
+		}
+		li:hover {
+			background-color: skyblue;
+		}
+		li a:hover {
+			color: green;
+		}
+		li:hover .ulTwo {
+			display: block;
+			z-index: 5;
+		}
+		li:hover>.ulThree {
+			display: block;
+			z-index: 10;
+		}
+		.absWrp {			
+			background: url(../image/home2.jpg) no-repeat 100% / cover;
+			width: 100vmin;
+			height: 100vmin;
+			border: 3px dotted orange;
+			margin: 0 auto;
+		}
+		.absWrpTwo {
+			background-color: rgba(207, 196, 207, 1);
+			width: 100vmin;
+			margin: 0 auto;
+		}
+		.absWrpThree {
+			font-size: 0;
+			text-align: right;
+		}
+		ul.absWrpThree>li {			
+			display: inline-block;
+			font-size: 16px;
+			margin: 0;
+		}
+		.absWrpFour {
+			width: 30px;
+			height: 31px;
+			background: url(../image/css-sprites.png) 397px -102px;
+		}
+		.absWrpThree a {
+			text-decoration: none;
+			text-transform: uppercase;
+			padding: 10px 15px;
+			display: block;
+			outline: none;
+			font-size: 24px;
+			color: yellow;
+		}
+		.absWrpFive {
+			width: 30px;
+			background: url(../image/css-sprites.png) 165px -2px;
+		}
+		.absWrpSix {
+			width: 30px;
+			background: url(../image/css-sprites.png) 233px 64px;
+		}
+		.absWrpSeven {
+			width: 30px;
+			background: url(../image/css-sprites.png) 266px 31px;
+		}
+		.absWrpEight {
+			width: 30px;
+			background: url(../image/css-sprites.png) 299px 30px;
+		}
+		.absWrp>div {
+			font-size: 32px;
+			position: absolute;
+			outline: 2px dashed orange;
+			left: calc(50% - 3.5em);
+			top: 100%;
+			display: none;
+		}
+		.absWrp:hover>div {
+			display: block;
+		}		
+		h1 {
+			text-align: center;
+			color: green;
+		}
+		.wrapper {
+			background-color: salmon;
+			margin: 50px auto;
+			width: 1200px;
+		}
+		#wrapperInl {
+			background-color: greenyellow;
+		}
+		#wrapperTbl {
+			background-color: salmon;
+		}
+		.mainMen {
+			display: table-cell;
+			outline: 2px solid red;
+			width: 400px;
+		}
+		.onlyKitchen {
+			outline: 2px solid green;
+			width: 600px;
+		}
+		.onlyKitchen div{
+			outline: 2px solid green;
+		}
+		.electroAuto {
+			display: table-cell;
+			outline: 2px solid fuchsia;
+			width: 800px;
+		}
+		.wrapper,.inBlock {
+			background-color: grey;
+		}
+		.inChapter {
+			display: inline-block;
+			font-size: 16px;
+		}
+		.wrapperSegment {
+			font-size: 0;
+		}
+		.fullIndent {
+			padding: 5px;
+			box-sizing: border-box;
+		}
+		.clr {
+			clear: both;
+		}
+		.clrLf{
+			clear: left;
+		}
+		.clrRt {
+			clear: right;
+		}
+		.inFl {
+			display: block;
+			float: left;
+			background-color: gold;
+		}
+		.outFl {
+			display: block;
+			float: right;
+			background-color: olive;
+		}
+		.btn {
+			border: 3px solid greenyellow;
+			border-radius: 10px;
+			padding: 15px 25px;
+			margin: 0 0 0 15px;
+			background-color: grey;
+		}
+		.btnMain {
+			text-align: center;	
+		}
+		.conteiner {
+			display: inline-flex;
+		}
+		.conteinerFlx {
+			flex: 0 1 400px;
+			outline: 2px solid aqua;
+		}
+		.threeFlx {
+			flex: 0 1 800px;
+		}
+		.twoFlx {
+			width: 600px;
+			outline: 2px solid salmon;
+		}
+		.electroAutoTwo{
+			outline: 2px solid fuchsia;
+		}
+		.electroHome {
+			outline: 2px solid palegreen;
+		}
+		.conteinerTwo {
+			flex-direction: column;
+		}
+		.conteinerThree {
+			flex-direction: row;
+		}
+		.psDo:after {
+			content: "";
+			clear: both;
+		}
+		.inFl.psDo:after {
+			content: "";
+			clear: left;
+		}
+		.outFl.psDo:after {
+			content: "";
+			clear: right;
+		}
+		.conteinerGrdA {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+		}
+		.conteinerGrdB {
+			display: grid;
+			grid-template-columns: repeat(2, 2fr);
+		}
+		.green{
+			background-color: green;
+			grid-area: a;
+		}
+		.orange{
+			background-color: orange;
+			grid-area: b/*d,e,f,i,g*/;
+		}
+		.aqua{
+			background-color: aqua;
+			grid-area: c/*h,k,l,m*/;
+		}
+		.salmon{
+			background-color: salmon;
+			grid-area: n,o,p,r,s;
+		}
+		.wrapperGrd{
+			grid-template-areas: 
+			"a bb c"
+			"dd ee"
+			"dd ff"
+			"ii ff"
+			"ii gg"
+		}
+	
+		
